@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large model files (optional - remove if you want to keep them)
+MedBot_Working_Model.rar
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+chat.txt
+
+# Temp files
+*.tmp
+*.temp

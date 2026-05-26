@@ -1,0 +1,125 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "good morning", "good evening", "howdy", "what's up", "hi there"],
+      "responses": ["Hello! I am MedBot. How can I help you today?", "Hi there! Tell me your symptoms and I will help you.", "Hey! I am here to help with your health queries."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "take care", "exit", "quit"],
+      "responses": ["Goodbye! Stay healthy!", "Take care! Visit a doctor if symptoms persist.", "Bye! Remember to stay hydrated and rest well."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "that's helpful", "appreciated", "thank you so much"],
+      "responses": ["You're welcome! Stay healthy!", "Happy to help! Consult a doctor for serious issues.", "Glad I could help!"]
+    },
+    {
+      "tag": "fever",
+      "patterns": ["I have fever", "high temperature", "my body is hot", "feeling feverish", "I have temperature", "body temperature is high", "I am burning up", "mild fever", "fever since 2 days"],
+      "responses": [
+        "For fever:\n- Take Paracetamol (Crocin/Dolo 650) every 6 hours\n- Drink plenty of water and fluids\n- Rest and apply cold compress on forehead\n- Avoid oily and spicy food\n⚠️ See a doctor if fever exceeds 103°F or lasts more than 3 days.",
+        "Suggested medicines for fever:\n- Paracetamol (Dolo 650 / Crocin)\n- Stay hydrated with ORS or coconut water\n- Wear light clothing\n⚠️ Consult a doctor if fever is very high or accompanied by rash."
+      ]
+    },
+    {
+      "tag": "cold",
+      "patterns": ["I have cold", "runny nose", "blocked nose", "stuffy nose", "sneezing", "common cold", "I keep sneezing", "nasal congestion"],
+      "responses": [
+        "For cold:\n- Cetirizine (Cetzine) for runny nose\n- Nasal drops like Nasivion for blocked nose\n- Steam inhalation twice a day\n- Drink warm water with honey and ginger\n⚠️ If cold lasts more than a week, consult a doctor."
+      ]
+    },
+    {
+      "tag": "cough",
+      "patterns": ["I have cough", "dry cough", "wet cough", "coughing a lot", "cough since days", "I can't stop coughing", "throat irritation with cough"],
+      "responses": [
+        "For cough:\n- Dry cough: Honitus syrup or Benadryl\n- Wet cough: Alex or Ascoril syrup\n- Sip warm water with honey and tulsi\n- Avoid cold drinks and ice cream\n⚠️ If coughing blood or cough lasts more than 2 weeks, see a doctor immediately."
+      ]
+    },
+    {
+      "tag": "headache",
+      "patterns": ["I have headache", "head pain", "migraine", "my head hurts", "head is pounding", "severe headache", "headache since morning"],
+      "responses": [
+        "For headache:\n- Take Paracetamol (Crocin) or Ibuprofen (Brufen)\n- For migraine: Saridon or Sumo tablet\n- Rest in a dark quiet room\n- Apply cold or warm compress on forehead\n- Stay hydrated\n⚠️ Seek emergency care if headache is sudden and severe."
+      ]
+    },
+    {
+      "tag": "sore_throat",
+      "patterns": ["sore throat", "throat pain", "throat hurts", "difficulty swallowing", "painful throat", "throat infection", "strep throat"],
+      "responses": [
+        "For sore throat:\n- Strepsils or Cofsils lozenges for relief\n- Gargle with warm salt water 3 times a day\n- Betadine gargle mouthwash\n- Drink warm honey-lemon water\n⚠️ If throat is very swollen or you have high fever, visit a doctor for antibiotics."
+      ]
+    },
+    {
+      "tag": "stomach_pain",
+      "patterns": ["stomach pain", "abdominal pain", "stomach ache", "belly pain", "cramps in stomach", "pain in abdomen", "my tummy hurts"],
+      "responses": [
+        "For stomach pain:\n- Antacid: Digene or Gelusil syrup\n- Gas/bloating: Pudin Hara or Eno\n- Spasms: Cyclopam tablet\n- Avoid spicy and oily food\n- Drink warm water\n⚠️ If pain is severe or accompanied by vomiting/blood, go to a doctor immediately."
+      ]
+    },
+    {
+      "tag": "vomiting",
+      "patterns": ["I am vomiting", "feeling nauseous", "nausea", "want to vomit", "throwing up", "upset stomach", "I feel like vomiting"],
+      "responses": [
+        "For nausea and vomiting:\n- Ondansetron (Emeset) tablet or syrup\n- Domperidone (Domstal) before meals\n- Sip small amounts of water frequently\n- Eat plain foods like khichdi or toast\n- Drink ORS to prevent dehydration\n⚠️ If vomiting persists more than 24 hours, see a doctor."
+      ]
+    },
+    {
+      "tag": "diarrhea",
+      "patterns": ["diarrhea", "loose motions", "watery stool", "frequent motions", "stomach upset", "running stomach", "loose stools"],
+      "responses": [
+        "For diarrhea:\n- ORS (Electral) to prevent dehydration\n- Loperamide (Imodium) to reduce motions\n- Norflox-TZ tablet (consult doctor first)\n- Eat BRAT diet: Banana, Rice, Applesauce, Toast\n- Avoid dairy and spicy food\n⚠️ If diarrhea lasts more than 2 days or has blood, visit a doctor."
+      ]
+    },
+    {
+      "tag": "diabetes",
+      "patterns": ["I have diabetes", "high blood sugar", "sugar level is high", "diabetic", "type 2 diabetes", "blood glucose is high"],
+      "responses": [
+        "For diabetes management:\n- Take prescribed medicines like Metformin regularly\n- Monitor blood sugar daily\n- Avoid sugar, white rice, and processed food\n- Exercise at least 30 minutes daily\n- Eat high fiber foods like vegetables and whole grains\n⚠️ Never change diabetes medicine without consulting your doctor."
+      ]
+    },
+    {
+      "tag": "blood_pressure",
+      "patterns": ["high blood pressure", "low blood pressure", "BP is high", "BP is low", "hypertension", "my pressure is high", "feeling dizzy due to BP"],
+      "responses": [
+        "For high BP:\n- Take prescribed medicines like Amlodipine or Telmisartan\n- Reduce salt intake\n- Avoid stress and do yoga/meditation\n- Monitor BP regularly\n\nFor low BP:\n- Drink ORS or salt-sugar water\n- Lie down and elevate legs\n- Eat small frequent meals\n⚠️ Always consult a doctor before taking BP medicines."
+      ]
+    },
+    {
+      "tag": "acidity",
+      "patterns": ["acidity", "heartburn", "acid reflux", "burning in chest", "gas problem", "bloating", "indigestion", "belching"],
+      "responses": [
+        "For acidity:\n- Antacids: Gelusil, Digene, or Mucaine gel\n- PPI: Omeprazole (Omez) or Pantoprazole (Pan-D)\n- Avoid spicy, oily, and fried food\n- Eat smaller meals and don't lie down after eating\n- Drink cold milk for instant relief\n⚠️ If acidity is severe or frequent, consult a gastroenterologist."
+      ]
+    },
+    {
+      "tag": "skin_allergy",
+      "patterns": ["skin rash", "itching", "skin allergy", "redness on skin", "hives", "skin irritation", "allergic reaction on skin"],
+      "responses": [
+        "For skin allergy:\n- Antihistamine: Cetirizine (Cetzine) or Loratadine\n- Calamine lotion for rash and itching\n- Hydrocortisone cream for inflammation\n- Avoid the allergen (dust, pollen, certain foods)\n- Keep skin moisturized\n⚠️ If rash spreads rapidly or you have difficulty breathing, go to emergency immediately."
+      ]
+    },
+    {
+      "tag": "back_pain",
+      "patterns": ["back pain", "lower back pain", "spine pain", "backache", "my back hurts", "pain in lower back", "back stiffness"],
+      "responses": [
+        "For back pain:\n- Ibuprofen (Brufen) or Diclofenac (Voveran) for pain relief\n- Muscle relaxant: Thiocolchicoside (Myospaz)\n- Apply Volini or Moov gel on affected area\n- Rest but avoid prolonged bed rest\n- Do gentle stretches and hot fomentation\n⚠️ See a doctor if pain radiates to legs or is accompanied by numbness."
+      ]
+    },
+    {
+      "tag": "eye_irritation",
+      "patterns": ["eye irritation", "red eyes", "itchy eyes", "watery eyes", "eye infection", "conjunctivitis", "eye pain"],
+      "responses": [
+        "For eye irritation:\n- Use Refresh Tears or similar lubricating eye drops\n- For infection: Moxifloxacin eye drops (Moxicip)\n- For allergy: Olopatadine eye drops (Pataday)\n- Avoid touching or rubbing eyes\n- Wash eyes with clean cool water\n⚠️ If vision is blurred or there is severe pain, see an eye doctor immediately."
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": ["what can you do", "who are you", "what are you", "tell me about yourself", "how can you help"],
+      "responses": [
+        "I am MedBot, a health assistant chatbot! I can help you with:\n- Identifying symptoms\n- Suggesting common medicines\n- General health advice\n⚠️ I am not a replacement for a real doctor. Always consult a medical professional for serious issues."
+      ]
+    }
+  ]
+}
